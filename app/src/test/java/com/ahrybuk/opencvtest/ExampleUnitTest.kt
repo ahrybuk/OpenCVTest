@@ -1,5 +1,7 @@
 package com.ahrybuk.opencvtest
 
+import androidx.room.Room
+import com.ahrybuk.opencvtest.db.AppDatabase
 import org.junit.Test
 
 import org.junit.Assert.*
