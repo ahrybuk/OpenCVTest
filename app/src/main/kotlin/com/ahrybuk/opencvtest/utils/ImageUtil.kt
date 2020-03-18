@@ -8,9 +8,7 @@ import org.koin.core.KoinComponent
 import org.koin.core.inject
 import java.io.*
 
-class ImageUtil : KoinComponent {
-
-    private val context: Context by inject()
+class ImageUtil(private val context: Context) : KoinComponent {
 
     fun saveBitmap(bitmapImage: Bitmap, timeStamp: Long): String? {
 //        TODO check
