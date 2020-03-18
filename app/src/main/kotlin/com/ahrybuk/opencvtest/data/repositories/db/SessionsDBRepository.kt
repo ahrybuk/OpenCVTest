@@ -16,10 +16,10 @@ import org.koin.core.inject
 import java.io.*
 
 
-class SessionsDBRepository : SessionRepository, KoinComponent {
-
-    private val appDatabase: AppDatabase by inject()
-    private val imageUtil: ImageUtil by inject()
+class SessionsDBRepository(
+    private val appDatabase: AppDatabase,
+    private val imageUtil: ImageUtil
+) : SessionRepository, KoinComponent {
 
     override fun getSession(timeStamp: Long): Observable<Session> {
         return appDatabase.sessionDao().getSingleByTimestamp(timeStamp).map { entity ->
