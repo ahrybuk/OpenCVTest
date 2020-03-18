@@ -9,5 +9,5 @@ interface SessionRepository {
 
     fun saveSession(session: Session): Observable<Boolean>
 
-    fun getSessionsList(from: Int = 0, step: Int = 10): Observable<Session>
+    fun getSessionsList(from: Int = 0, step: Int = 10): Observable<List<Session>>
 }
