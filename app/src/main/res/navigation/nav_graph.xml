@@ -9,5 +9,19 @@
         android:id="@+id/splashScreenFragment"
         android:name="com.ahrybuk.opencvtest.presentation.splash.SplashFragment"
         android:label="SplashScreen"
-        tools:layout="@layout/fragment_splash" />
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/splashToHome"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ahrybuk.opencvtest.presentation.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
 </navigation>

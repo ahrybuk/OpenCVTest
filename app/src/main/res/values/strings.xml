@@ -1,6 +1,11 @@
 <resources>
-	<string name="app_name">OpenCVTest</string>
-	<string name="unknown_error">Something went wrong</string>
-	<string name="created_by">created by Oleksandr Hrybuk</string>
-	<string name="splash_title">Test task to Axon</string>
+    <string name="app_name">OpenCVTest</string>
+    <string name="unknown_error">Something went wrong</string>
+
+    <string name="created_by">created by Oleksandr Hrybuk</string>
+    <string name="splash_title">Test task to Axon</string>
+
+    <string name="start">Start</string>
+    <string name="list">List</string>
+    <string name="home_screen_title">Choose your way</string>
 </resources>

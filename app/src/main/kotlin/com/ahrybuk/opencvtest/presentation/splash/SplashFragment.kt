@@ -25,7 +25,7 @@ class SplashFragment : BaseFragment() {
         val splashViewModel = ViewModelProviders.of(this)[SplashViewModel::class.java]
 
         splashViewModel.countDownTimerLiveData.observe(viewLifecycleOwner, Observer {
-            //            TODO() navigate
+            findNavController().navigate(R.id.splashToHome)
         })
     }
 }
