@@ -10,7 +10,6 @@ import org.koin.dsl.module
 
 
 val appModule = module {
-    single { androidContext() }
     single {
         Room.databaseBuilder(
             get(),
@@ -18,7 +17,7 @@ val appModule = module {
         ).build()
     }
 
-    factory { ImageUtil(get()) }
+    factory { ImageUtil(androidContext()) }
 
     factory<SessionRepository> { SessionsDBRepository(get(), get()) }
 }
